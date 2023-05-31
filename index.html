@@ -80,6 +80,20 @@
             padding: 10px;
             border: 1px solid #fff;
         }
+
+        /* レスポンシブデザイン */
+        @media screen and (max-width: 812px) { /* iPhone 12 Pro の画面幅に合わせています */
+            form {
+                width: 90%; /* フォームの幅を90%に設定 */
+            }
+            input, textarea {
+                font-size: 1.5em; /* フォントサイズを大きくする */
+            }
+            input[type="submit"], #summary-button, #delete-button {
+                padding: 20px 40px; /* ボタンのパディングを増やす */
+                font-size: 1.5em; /* ボタンのフォントサイズを大きくする */
+            }
+        }
     </style>
 </head>
 
@@ -99,7 +113,7 @@
 
     <div id="summary"></div>
 
-    <script src="/script.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
