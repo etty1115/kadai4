@@ -47,7 +47,7 @@
         input[type="submit"]:hover {
             background-color: #ff7700;
         }
-        #summary-button {
+        #summary-button, #delete-button {
             display: block;
             width: 150px;
             margin: 20px auto;
@@ -59,7 +59,7 @@
             text-align: center;
             font-size: 1.2em;
         }
-        #summary-button:hover {
+        #summary-button:hover, #delete-button:hover {
             background-color: #ff7700;
         }
         #summary {
@@ -68,6 +68,17 @@
             padding: 20px;
             border-radius: 10px;
             color: #fff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        thead {
+            background-color: #ff5500;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #fff;
         }
     </style>
 </head>
@@ -84,10 +95,11 @@
     </form>
 
     <button id="summary-button">要約を見る</button>
+    <button id="delete-button">要約を削除する</button>
 
     <div id="summary"></div>
 
-    <script src="/JS/script.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>
